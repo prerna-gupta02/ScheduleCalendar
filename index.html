@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Scheduler Calendar</title>
+</head>
+<body>
+    <div class="header">
+        <p class="prev">&#8249</p>
+        <p class="next">&#8250</p>
+        <p class="date">June 2021</p>
+        <select name="" id="">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        <div class="heading">Scheduler Calendar</div>
+        <div class="views">
+            <p id="day-show" class="active" onclick="funday()">DAY</p>
+            <p id="week-show" class="" onclick="funweek()">WEEK</p>
+            <p id="month-show" class="" onclick="funmonth()">MONTH</p>
+        </div>
+    </div>
+    <div class="month-calendar">
+        <div class="weekdays">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+        <div class="days">
+            <div class="date prev-date" onclick="schedule()">30</div>
+            <div class="date prev-date" onclick="schedule()">31</div>
+            <div class="date" onclick="schedule(this)">1</div>
+            <div class="date" onclick="schedule()">2</div>
+            <div class="date" onclick="schedule()">3</div>
+            <div class="date" onclick="schedule()">4</div>
+            <div class="date" onclick="schedule()">5</div>
+            <div class="date" onclick="schedule()">6</div>
+            <div class="date" onclick="schedule()">7</div>
+            <div class="date" onclick="schedule()">8</div>
+            <div class="date" onclick="schedule()">9</div>
+            <div class="date" onclick="schedule()">10</div>
+            <div class="date" onclick="schedule()">11</div>
+            <div class="date" onclick="schedule()">12</div>
+            <div class="date" onclick="schedule()">13</div>
+            <div class="date" onclick="schedule()">14</div>
+            <div class="date" onclick="schedule()">15</div>
+            <div class="date" onclick="schedule()">16</div>
+            <div class="date" onclick="schedule()">17</div>
+            <div class="date" onclick="schedule()">18</div>
+            <div class="date" onclick="schedule()">19</div>
+            <div class="date" onclick="schedule()">20</div>
+            <div class="date" onclick="schedule()">21</div>
+            <div class="date" onclick="schedule()">22</div>
+            <div class="date" onclick="schedule()">23</div>
+            <div class="date" onclick="schedule()">24</div>
+            <div class="date" onclick="schedule()">25</div>
+            <div class="date" onclick="schedule()">26</div>
+            <div class="date" onclick="schedule()">27</div>
+            <div class="date" onclick="schedule()">28</div>
+            <div class="date" onclick="schedule()">29</div>
+            <div class="date" onclick="schedule()">30</div>
+            <div class="date next-date" onclick="schedule()">1</div>
+            <div class="date next-date" onclick="schedule()">2</div>
+            <div class="date next-date" onclick="schedule()">3</div>
+        </div>
+    </div>
+    <div class="week-calendar">
+        <div class="time-slots">
+            <div class="time">
+                <div></div>
+                <div>12:00 AM</div>
+                <div>1:00 AM</div>
+                <div>2:00 AM</div>
+                <div>3:00 AM</div>
+                <div>4:00 AM</div>
+                <div>5:00 AM</div>
+                <div>6:00 AM</div>
+                <div>7:00 AM</div>
+                <div>8:00 AM</div>
+                <div>9:00 AM</div>
+                <div>10:00 AM</div>
+                <div>11:00 AM</div>
+                <div>12:00 PM</div>
+                <div>1:00 PM</div>
+                <div>2:00 PM</div>
+                <div>3:00 PM</div>
+                <div>4:00 PM</div>
+                <div>5:00 PM</div>
+                <div>6:00 PM</div>
+                <div>7:00 PM</div>
+                <div>8:00 PM</div>
+                <div>9:00 PM</div>
+                <div>10:00 PM</div>
+                <div>11:00 PM</div>
+            </div>
+            <div class="slots">
+                <div class="weekday">
+                    <p>Sunday</p>
+                    <p class="week-date">22</p>
+                </div>
+                <div class="weekday">
+                    <p>Monday</p>
+                    <p class="week-date">23</p>
+                </div>
+                <div class="weekday">
+                    <p>Tuesday</p>
+                    <p class="week-date">24</p>
+                </div>
+                <div class="weekday">
+                    <p>Wednesday</p>
+                    <p class="week-date">25</p>
+                </div>
+                <div class="weekday">
+                    <p>Thursday</p>
+                    <p class="week-date">26</p>
+                </div>
+                <div class="weekday">
+                    <p>Friday</p>
+                    <p class="week-date">27</p>
+                </div>
+                <div class="weekday">
+                    <p>Saturday</p>
+                    <p class="week-date">28</p>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="day-calendar">
+        <div class="time-slots">
+            <div class="time">
+                <div></div>
+                <div>12:00 AM</div>
+                <div>1:00 AM</div>
+                <div>2:00 AM</div>
+                <div>3:00 AM</div>
+                <div>4:00 AM</div>
+                <div>5:00 AM</div>
+                <div>6:00 AM</div>
+                <div>7:00 AM</div>
+                <div>8:00 AM</div>
+                <div>9:00 AM</div>
+                <div>10:00 AM</div>
+                <div>11:00 AM</div>
+                <div>12:00 PM</div>
+                <div>1:00 PM</div>
+                <div>2:00 PM</div>
+                <div>3:00 PM</div>
+                <div>4:00 PM</div>
+                <div>5:00 PM</div>
+                <div>6:00 PM</div>
+                <div>7:00 PM</div>
+                <div>8:00 PM</div>
+                <div>9:00 PM</div>
+                <div>10:00 PM</div>
+                <div>11:00 PM</div>
+            </div>
+            <div class="slots">
+                <div class="selected-date">
+                    <p class="day">Tuesday</p>
+                    <p class="date">22</p>
+                </div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" onclick="schedule()">&#43;</button>
+    <script src="./script.js"></script>
+</body>
+</html>
